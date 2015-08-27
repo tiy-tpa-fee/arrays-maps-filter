@@ -14,3 +14,10 @@ items.forEach(function(item) {
     itemsInRange.push(item);
 });
 console.log("Items that cost between $14.00 USD and $18.00 USD:", itemsInRange);
+
+
+var woodItems = items.filter(function(item) {
+  return item.materials.indexOf("wood") >= 0;
+});
+
+console.log(woodItems);
